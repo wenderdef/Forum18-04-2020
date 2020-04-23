@@ -1,0 +1,44 @@
+EX 03,04 https://github.com/wenderdef/Forum18-04-2020/tree/master/Forum17-04-2020/src/Exercicios3e4
+
+EX 01
+O Encapsulamento é utilizado para controlar o acesso aos atributos e métodos de uma classe assim sendo uma forma  de proteger os dados da classe limitando a manipulação desta classe.
+
+niveis encapsulamento:
+Nível de classe: Quando determinamos o acesso de uma classe inteira que pode ser public ou Package-Private (padrão);
+Nível de membro: Quando determinamos o acesso de atributos ou métodos de uma classe que podem ser public, private, protected ou Package-Private (padrão).
+
+Exemplo:
+
+public class Cadastro {
+	private String cadastrar;
+	private int senha;
+	private boolean active;
+
+	public String getUsename(){
+		return this.username;
+	}
+
+	private boolean getActive(){
+		return this.active;
+	}
+}
+----------------------------------------------------------------------------------
+
+EX 02
+
+O propósito do encapsulamento é o de organizar os dados que sejam relacionados, agrupando-os em Classes 
+reduzindo as duplicidade de nomes de variáveis e, da mesma forma, reunindo métodos relacionados.
+Este padrão ajuda a manter um programa mais legível. Quando unido com métodos (setter e getters)
+pode-se acessar classes e reutiliza-los, assim, o código fica mais limpo com menores quantidades de linhas.
+
+Assim como no exemplo a seguir:
+
+java
+public class AppConta {
+	public static void main(String[] login, int  senha) {
+		Conta novaConta = new Conta("wender",2525123);
+
+		novaConta.Conta();
+		novaConta.login("wender",2525123);
+}
+```
